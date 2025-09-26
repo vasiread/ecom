@@ -1,0 +1,42 @@
+.cart-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+ }
+
+
+input,textarea{
+    height: 50px;
+    width: 60%;
+    display: flex;
+    border:1px solid gray;
+    border-radius: 4px;
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+textarea{
+    height: 200px;
+}
+.error {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 4px; 
+    display: block;
+    width: 62%;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
