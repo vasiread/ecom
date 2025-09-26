@@ -19,14 +19,26 @@ exports.getProducts = (req, res) => {
  
 exports.placeOrders = (req, res) => {
     try {
-        const { firstName, lastName, address } = req.body;
+        const { firstName, lastName, address, products } = req.body;
 
         if (!firstName || !lastName || !address) {
             return res.status(400).json({ message: "First name, last name, and address are required." });
         }
 
-        console.log("Order Placed Successfully:");
-        console.log({ firstName, lastName, address });
+        console.log("\n================ ORDER RECEIPT ================\n");
+        console.log(`Customer: ${firstName} ${lastName}`);
+        console.log(`Address: ${address}\n`);
+        console.log("Products:");
+
+        let total = 0;
+        products.forEach((p, i) => {
+            const itemTotal = p.price * p.cart;
+            total += itemTotal;
+            console.log(`${i + 1}. ${p.name} - ₹${p.price} x ${p.cart} = ₹${itemTotal.toFixed(2)}`);
+        });
+
+        console.log(`\nTotal Amount: ₹${total.toFixed(2)}`);
+        console.log("\n==============================================\n");
 
         return res.status(200).json({ message: "Order placed successfully!" });
 
@@ -35,3 +47,4 @@ exports.placeOrders = (req, res) => {
         return res.status(500).json({ message: "Something went wrong while placing the order." });
     }
 };
+
