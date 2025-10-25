@@ -1,0 +1,21 @@
+/* *{
+    background-color: red
+} */
+
+
+#segmentsave{
+    background-color: transparent;
+    border: 1px solid #c4bcbc;
+    color:#f78c8c;
+    cursor: pointer;
+    padding: 0.3rem 0.8rem;
+    font-family: "Poppins";
+
+    
+}
+
+#segmentsave:hover{
+    transition: 0.1s ease padding;
+    padding: 0.5rem 1rem;
+
+}

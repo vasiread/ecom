@@ -1,0 +1,115 @@
+ .segmentdetails {
+    max-width: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+ }
+
+ .header {
+    background-color: rgb(184, 238, 238);
+    color: #fff;
+    font-family: "Poppins";
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding-left: 0.5rem;
+    cursor: pointer;
+
+
+ }
+
+ #addschema {
+    color: #4eb9f7;
+    text-decoration: underline;
+    font-family: "Poppins";
+    cursor: pointer;
+ }
+select{
+   height: 35px;
+   border: 1px solid rgb(209, 195, 195);
+
+}
+.schema-item{
+   display: flex;
+   gap: 10px;
+}
+
+ .header p {
+    display: flex;
+    align-items: center;
+ }
+
+ .segmentdiv {
+    margin: 1rem 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    gap: 5px;
+
+
+ }
+
+ .segmentdiv #name {
+    height: 30px;
+
+    border: 1px solid rgb(165, 164, 164);
+    border-radius: 5px;
+    width: 200px;
+    padding: 0 1rem;
+    color: rgb(170, 169, 169);
+    outline: none;
+
+ }
+
+ #labelname {
+    font-family: "Poppins";
+
+ }
+
+ .segmentdiv #name::placeholder {
+    color: rgb(148, 144, 144);
+ }
+
+ .segmentfooter {
+
+    display: flex;
+    gap: 20px;
+    background-color: #f7f2f2;
+    padding: 1rem 0.5rem;
+
+
+
+ }
+
+ .segmentfooter button {
+    width: fit-content;
+    border: none;
+    font-family: "Poppins";
+    cursor: pointer;
+
+ }
+
+ .segmentfooter button:first-child {
+    color: #fff;
+    background-color: rgb(66, 216, 196);
+    border-radius: 4px;
+
+ }
+
+ .segmentfooter button:last-child {
+    color: red;
+    background-color: #fff;
+ }
+
+ .segmentfooter button {
+    height: 40px;
+ }
+ #cross{
+   color:rgb(122, 123, 124);
+   border:none;
+   border-radius: 10px;
+   width: 30px;
+ }
